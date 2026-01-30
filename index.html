@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Mileage Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Fuel Mileage Calculator</h1>
+        </header>
+        
+        <div class="calculator">
+            <h2>Calculate MPG</h2>
+            <div class="input-field">
+                <label for="startMileage">Starting Mileage (miles):</label>
+                <input type="number" id="startMileage" placeholder="Enter starting mileage" />
+            </div>
+            <div class="input-field">
+                <label for="endMileage">Ending Mileage (miles):</label>
+                <input type="number" id="endMileage" placeholder="Enter ending mileage" />
+            </div>
+            <div class="input-field">
+                <label for="amountSpent">Amount Spent on Fuel ($):</label>
+                <input type="number" id="amountSpent" placeholder="Enter amount spent" />
+            </div>
+            <div class="input-field">
+                <label for="pricePerGallon">Price per Gallon ($):</label>
+                <input type="number" id="pricePerGallon" placeholder="Enter price per gallon" />
+            </div>
+            <button onclick="calculateMPG()">Calculate MPG</button>
+        </div>
+
+        <div class="calculator">
+            <h2>Calculate Distance You Can Drive</h2>
+            <div class="input-field">
+                <label for="mpg">Car's Miles Per Gallon (mpg):</label>
+                <input type="number" id="mpg" placeholder="Enter mpg" />
+            </div>
+            <div class="input-field">
+                <label for="amountSpent2">Amount Spent on Fuel ($):</label>
+                <input type="number" id="amountSpent2" placeholder="Enter amount spent" />
+            </div>
+            <div class="input-field">
+                <label for="pricePerGallon2">Price per Gallon ($):</label>
+                <input type="number" id="pricePerGallon2" placeholder="Enter price per gallon" />
+            </div>
+            <button onclick="calculateDistance()">Calculate Distance</button>
+        </div>
+
+        <div id="result" class="result">
+            <!-- Result will be displayed here -->
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
