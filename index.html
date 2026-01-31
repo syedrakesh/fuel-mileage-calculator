@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fuel Mileage Calculator</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js -->
 </head>
 <body>
@@ -14,21 +14,17 @@
             <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
         </header>
 
-        <!-- Section 1: User Profile for Car Details -->
+        <!-- Car Profile Section -->
         <div class="calculator">
             <h2>Car Profile</h2>
             <div class="input-field">
                 <label for="carModel">Car Model:</label>
                 <input type="text" id="carModel" placeholder="Enter car model" />
             </div>
-            <div class="input-field">
-                <label for="carMPG">Miles Per Gallon (MPG):</label>
-                <input type="number" id="carMPG" placeholder="Enter miles per gallon" />
-            </div>
             <button onclick="saveCarProfile()">Save Car Profile</button>
         </div>
 
-        <!-- Section 2: Calculate MPG based on Starting and Ending Mileage -->
+        <!-- MPG Calculation Section -->
         <div class="calculator">
             <h2>Calculate MPG</h2>
             <div class="input-field">
@@ -50,12 +46,12 @@
             <button onclick="calculateMPG()">Calculate MPG</button>
         </div>
 
-        <!-- Section 3: Calculate Distance based on MPG -->
+        <!-- Distance Calculation Section -->
         <div class="calculator">
             <h2>Calculate Distance You Can Drive</h2>
             <div class="input-field">
                 <label for="mpg">Car's Miles Per Gallon (mpg):</label>
-                <input type="number" id="mpg" placeholder="Enter mpg" />
+                <input type="number" id="mpg" placeholder="Calculated mpg" readonly />
             </div>
             <div class="input-field">
                 <label for="amountSpent2">Amount Spent on Fuel ($):</label>
@@ -68,7 +64,7 @@
             <button onclick="calculateDistance()">Calculate Distance</button>
         </div>
 
-        <!-- Section 4: Graphical Data - Fuel Efficiency over Time -->
+        <!-- Graph Section -->
         <h2>Fuel Efficiency Over Time</h2>
         <canvas id="fuelEfficiencyChart"></canvas>
 
@@ -77,6 +73,6 @@
         </div>
     </div>
 
-    <script src="scripts.js"></script>
+    <script src="assets/js/scripts.js"></script>
 </body>
 </html>
